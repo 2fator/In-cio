@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Por que você precisa de Segurança em Duas Etapas (2FA)?</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff5858, #f09819);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .container {
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 720px;
+    box-shadow: 0 0 35px rgba(255,215,0,0.6);
+    user-select: none;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  }
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 1.6rem;
+    line-height: 1.7;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+  }
+  .highlight {
+    color: #ffd700;
+    font-weight: 900;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    margin: 1.5rem 0 2rem;
+    font-size: 1.1rem;
+    user-select: text;
+  }
+  ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  a.button-link {
+    display: inline-block;
+    background: #ffd700;
+    color: #222;
+    font-weight: 900;
+    padding: 18px 40px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(255,215,0,0.85);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    user-select: none;
+    text-decoration: none;
+  }
+  a.button-link:hover, a.button-link:focus {
+    background: #ffc300;
+    box-shadow: 0 10px 30px #ffc300;
+    transform: scale(1.05);
+    outline: none;
+  }
+  .risk-section {
+    background: #311b0b;
+    border-radius: 14px;
+    padding: 20px 25px;
+    margin-top: 2rem;
+    box-shadow: 0 0 18px rgba(255, 165, 0, 0.7);
+    user-select: text;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .risk-section h3 {
+    color: #ffae00;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px #ffae00;
+  }
+  .risk-section ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  .benefits-section {
+    background: #0a2e3e;
+    border-radius: 14px;
+    padding: 20px 25px;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px #50e3c2;
+    color: #a2f7e1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+  }
+  .benefits-section ul {
+    margin-left: 1.7rem;
+    list-style-type: square;
+  }
+  .footer-info {
+    margin-top: 3rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    text-shadow: 0 0 6px rgba(0,0,0,0.6);
+    user-select: none;
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p, .risk-section, .benefits-section {
+      font-size: 1rem;
+      padding: 15px 20px;
+    }
+    .button-wrapper {
+      justify-content: center;
+    }
+    a.button-link {
+      width: 100%;
+      font-size: 1rem;
+      padding: 15px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="title" tabindex="0">
+    <h1 id="title">Proteja sua vida digital com <span class="highlight">Segurança em Duas Etapas (2FA)</span></h1>
+    <p><strong>Você sabia?</strong> <span class="highlight">Mais de 80% das violações de contas acontecem por senhas fracas ou roubadas.</span> Não seja uma vítima fácil na internet!</p>
+    <p>Ativar a <span class="highlight">Segurança em Duas Etapas (2FA)</span> dificulta o acesso não autorizado, exigindo um segundo fator — geralmente um código temporário enviado para seu celular — para logar em seus serviços online.</p>
+
+    <div class="risk-section" aria-label="Riscos de não usar a segurança em duas etapas">
+      <h3>Riscos de não usar 2FA</h3>
+      <ul>
+        <li><strong>Roubos de identidade:</strong> Hackers podem acessar informações pessoais, fotos, e dados bancários.</li>
+        <li><strong>Perda financeira:</strong> Contas bancárias e lojas online ficam vulneráveis.</li>
+        <li><strong>Uso indevido das suas contas:</strong> Senhas enviadas para amigos ou contatos por fraude.</li>
+        <li><strong>Mais difícil recuperar contas hackeadas:</strong> Gastos, tempo perdido e dor de cabeça.</li>
+      </ul>
+    </div>
+
+    <div class="benefits-section" aria-label="Benefícios de usar a segurança em duas etapas">
+      <h3>Por que ativar 2FA agora?</h3>
+      <ul>
+        <li>📱 <strong>Proteção extra simples:</strong> Um código temporário dificulta invasões.</li>
+        <li>🔒 <strong>Confiança e tranquilidade:</strong> Você controla o acesso às suas contas.</li>
+        <li>⚡ <strong>Configurável facilmente:</strong> Apps populares (Google Authenticator, Authy) e SMS.</li>
+        <li>💸 <strong>Economize possíveis prejuízos financeiros:</strong> Segurança proativa.</li>
+      </ul>
+    </div>
+
+    <p>Não espere ser vítima para agir. <strong>Ative a Segurança em Duas Etapas hoje mesmo!</strong> É rápido, gratuito e faz toda a diferença.</p>
+
+    <div class="button-wrapper">
+      <a href="https://www.google.com/search?q=como+ativar+seguranca+duas+etapas" target="_blank" rel="noopener" class="button-link" aria-label="Quero ativar a segurança em duas etapas">Quero Ativar Minha Segurança em Duas Etapas Agora! 🚀</a>
+    </div>
+
+    <p class="footer-info">Este é um passo fundamental para proteger sua vida digital. Faça a escolha certa!</p>
+  </div>
+</body>
+</html>
+
